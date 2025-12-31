@@ -3,148 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <title>Muhammad Kamil Khan | Computational Media Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 
 <body>
 
 <header>
   <h1>Muhammad Kamil Khan</h1>
-  <p>Computational Media • AI Systems • Game Interaction • Procedural Environments</p>
+  <p>Computational Media • AI Systems • Procedural Interaction • Game Research</p>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#writing">Writing Sample</a>
+    <a href="projects.html">Portfolio</a>
+    <a href="#writing">Writing</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="intro">
   <h2>About Me</h2>
-  <p>
-  I am a Computational Media researcher and game developer exploring how players form meaning,
-  perception, and interpretation through interaction with procedural and AI-driven systems.
-  My work lies at the intersection of <b>game AI, expressive interaction, non-verbal systems,
-  procedural generation, and AR perception pipelines.</b>
-  </p>
-
-  <p>
-  I am currently completing a Bachelor's in Computer Systems Engineering at UET Peshawar (Expected 2026),
-  where I have developed multiple technical and creative systems in Unity involving
-  machine learning inference, procedural environments, and agent-based interaction.
-  </p>
-
-  <a class="btn" href="#portfolio">View Portfolio</a>
+  <p>I am a computer systems engineering student and game developer with a research interest in computational media, procedural generation, and expressive interactive systems. I work at the intersection of technical systems and player experience, exploring how artificial agents, environments, and rules can communicate meaning through behavior rather than explicit narrative. My background spans game development, augmented and virtual reality, and AI driven systems, with projects ranging from procedural world generation to non verbal interaction experiments. Having grown up across the United States, Canada, and Pakistan, I bring a perspective shaped by movement, adaptation, and access, and I am particularly interested in how interactive systems foster curiosity, interpretation, and connection. My long term goal is to pursue research in computational media, designing systems that use computation to expand how people play, think, and experience interactive worlds.</p>
+  <p>BS Computer Systems Engineering @ UET Peshawar  Expected 2026</p>
 </section>
 
-<section class="centered">
-<h2>Research Interests</h2>
-<ul>
-<li>Computational Media & Game AI</li>
-<li>Procedural Generation & Runtime Systems</li>
-<li>Non-verbal Agent Interaction</li>
-<li>AR/VR Perception Systems</li>
-<li>Interpretation & Expressive Play</li>
-</ul>
+<section>
+  <h2>Research Interests</h2>
+  <p>
+    My research interests center on <b>Computational Media, Game AI, and Expressive Interaction Systems</b>, with emphasis on:
+  </p>
+  <ul>
+    <li>Procedural Content Generation (PCG) & adaptive world systems</li>
+    <li>Agent behavior, autonomy, and player system relationships</li>
+    <li>Non verbal, interpretive, and affect driven interaction</li>
+    <li>AR perception & real time inference for embodied play</li>
+    <li>Meaning formation through system response rather than explicit narrative</li>
+  </ul>
+  <p>
+    I aim to explore how digital systems can communicate <b>emotion, familiarity, and trust</b> through behavior, memory, and environment and how interactive media can evoke understanding without words.
+  </p>
 </section>
 
 
-<!-- ===================== PORTFOLIO GRID ====================== -->
-
+<!-- ================= PORTFOLIO ================= -->
 <section id="portfolio">
-<h2>Featured Portfolio</h2>
+<h2>Featured Projects</h2>
 
 <div class="grid">
 
-  <!-- Procedural Generation -->
-  <div class="card">
+
+    <div class="card" onclick="openModal('fantasy')">
+    <img src="assets/fantasy.png">
+    <h3>Recognition Without Dialogue</h3>
+    <p>Expressive interaction prototype.</p>
+  </div>
+
+  <div class="card" onclick="openModal('procedural')">
     <img src="assets/procedural.png">
     <h3>Procedural AI World Generator</h3>
-    <p>Chunk-based runtime terrain system with AI navigation and continuous world perception.</p>
-    <a href="https://github.com/KamilKhan23/Procedural-AI-Chunked-World.git">GitHub</a>
-    <a href="https://www.youtube.com/watch?v=yVf1r7poS2M">Video</a>
+    <p>Runtime terrain + navmesh procedural agents.</p>
   </div>
 
-  <!-- Superhero Game -->
-  <div class="card">
+<div class="card" onclick="openModal('fyp')">
+    <img src="assets/fyp1.jpeg">
+    <h3>AR Object Recognition  FYP</h3>
+    <p>ONNX realtime inference + AR overlay.</p>
+  </div>
+
+ <div class="card" onclick="openModal('superhero')">
     <img src="assets/superhero.png">
     <h3>Superhero 3D Action Game (Studio)</h3>
-    <p>Gameplay systems, traversal mechanics, cinematics & UI contributions.</p>
-    <a href="https://apps.apple.com/us/app/super-hero-justice-war-league/id1644682510">App Store</a>
-    <a href="https://play.google.com/store/apps/details?id=com.cp.superherojusticewarlegends">Play Store</a>
+    <p>Combat, traversal, UI, animation workflow.</p>
   </div>
 
-  <!-- Reckless Racer -->
-  <div class="card">
-    <h3>Reckless Racer (2D Mobile)</h3>
-    <div class="gallery">
-      <img src="assets/racer.jpg" class="thumb">
-      <img src="assets/racer2.jpg" class="thumb">
-    </div>
-    <p>Waypoint AI, UI screens, level design & gameplay flow.</p>
+  <div class="card" onclick="openModal('racer')">
+    <img src="assets/racer.jpg">
+    <h3>Reckless Racer (2D)</h3>
+    <p>Waypoint AI + track design + UI flow.</p>
   </div>
 
-  <!-- Survival Horde -->
-  <div class="card">
+  <div class="card" onclick="openModal('survival')">
     <img src="assets/survival.png">
-    <h3>Horde Survival Game</h3>
-    <p>Wave-spawn enemies, hit feedback, simple VFX & balancing.</p>
+    <h3>Peko’s Odyssey</h3>
+    <p>Wave enemy spawner + combat logic.</p>
   </div>
-
-  <!-- FYP -->
-  <div class="card">
-    <h3>AR Object Recognition — FYP</h3>
-    <div class="gallery">
-      <img src="assets/fyp1.jpeg" class="thumb">
-      <img src="assets/fyp2.jpeg" class="thumb">
-    </div>
-    <p>ONNX offline inference pipeline + real-time AR confidence visualization.</p>
-  </div>
-
-  <!-- Fantasy Scene -->
-  <div class="card">
-    <img src="assets/fantasy.png">
-    <h3>Fantasy URP Scene</h3>
-    <p>Lighting + foliage + composition experiments in Unity URP.</p>
-  </div>
-
 </div>
 </section>
 
 
-<!-- ===================== WRITING SAMPLE ====================== -->
+
+<!-- ================= MODALS ================= -->
+
+<!-- Procedural -->
+<div id="procedural" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Procedural AI World Generator</h2>
+
+    <div class="modal-gallery">
+      <img src="assets/procedural.png">
+    </div>
+
+    <p>Chunk based infinite terrain with auto navmesh + AI roaming behavior.</p>
+ <p>NOTE: For more detail on project please visit portfolio section</p>
+    <p><b>Tech:</b> Unity • NavMesh • Procedural Generation</p>
+   <div class="button-row">
+  <a class="btn-primary" href="https://github.com/KamilKhan23/Procedural-AI-Chunked-World.git" target="_blank">GitHub</a>
+  <a class="btn-primary" href="https://www.youtube.com/watch?v=yVf1r7poS2M" target="_blank">Demo Video</a>
+  <a class="btn-secondary" href="projects.html">Portfolio Page</a>
+</div>
+
+  </div>
+</div>
+
+
+<!-- SUPERHERO -->
+<div id="superhero" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Superhero 3D Action Game (Studio)</h2>
+
+    <div class="modal-gallery">
+      <img src="assets/superhero.png">
+    </div>
+
+    <p>Gameplay, traversal mechanics, UI, VFX, cinematic scenes.</p>
+
+ <p>During development of Superhero 3D Action, I contributed to gameplay implementation, traversal mechanics, and overall feel of the character. I worked on core combat interactions, player movement tuning, and animation blending to make actions responsive and readable. I also helped design and integrate UI flow, HUD transitions, and user feedback elements. Beyond mechanical work, I contributed to several cinematic moments using Cinemachine, implementing camera angles and VFX triggers to enhance impact. My role combined technical scripting with experiential polish in a production level mobile game.</p>
+
+  <div class="button-row">
+  <a class="btn-primary" href="https://apps.apple.com/us/app/super-hero-justice-war-league/id1644682510" target="_blank">App Store</a>
+  <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.cp.superherojusticewarlegends" target="_blank">Play Store</a>
+</div>
+
+
+  </div>
+</div>
+
+
+<!-- Racer -->
+<div id="racer" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Reckless Racer 2D</h2>
+
+    <div class="modal-gallery">
+      <img src="assets/racer.jpg">
+      <img src="assets/racer2.jpg">
+    </div>
+
+    <p>Waypoint racing AI, UI menus, level construction.</p>
+
+<p>Reckless Racing 2D is my first independently developed Unity game, where I built core systems including racing AI, waypoint navigation, lap/checkpoint tracking, UI, 2D physics, score handling, and Google Ads integration. It served as my entry point into game development and helped me understand gameplay loops and release pipelines.</p>
+<a class="btn-secondary" href="https://www.linkedin.com/posts/muhammad-kamil-khan-0196a3271_unity-unity2d-gamedev-activity-7165299877722112000-wpJv" target="_blank">LinkedIn Post</a>
+
+  </div>
+</div>
+
+
+<!-- FYP -->
+<div id="fyp" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>AR Object Recognition  FYP</h2>
+
+    <div class="modal-gallery">
+      <img src="assets/fyp1.jpeg">
+      <img src="assets/fyp2.jpeg">
+    </div>
+
+    <p>AR Final Year Project implementing an ONNX based offline recognition model integrated with Unity ARFoundation. The system performs real time detection and confidence visualization directly on mobile hardware, demonstrating approaches to efficient edge inference, spatial feedback, and mixed reality perception.</p>
+ <p>NOTE: For more detail on project please visit portfolio section</p>
+<div class="button-row">
+
+  <a class="btn-secondary" href="projects.html">Portfolio Page</a>
+</div>
+  </div>
+</div>
+
+
+<!-- Fantasy -->
+<div id="fantasy" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Recognition Without Dialogue</h2>
+
+    <div class="modal-gallery">
+      <img src="assets/fantasy.png">
+    </div>
+
+    <p>A minimal Unity experience where familiarity and trust emerge non-verbally through proximity, time, and subtle environmental response.</p>
+ <p>NOTE: For more detail on project please visit portfolio section</p>
+
+<div class="button-row">
+  <a class="btn-primary" href="https://github.com/KamilKhan23/Recognition-Without-Dialogue" target="_blank">GitHub</a>
+  <a class="btn-primary" href="https://youtu.be/U3J7lswDd6k" target="_blank">Demo Video</a>
+  <a class="btn-secondary" href="projects.html">Portfolio Page</a>
+</div>
+
+  </div>
+</div>
+
+
+<!-- Survival -->
+<div id="survival" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Peko’s Odyssey</h2>
+
+    <div class="modal-gallery">
+      <img src="assets/survival.png">
+     <img src="assets/peko2.png">
+    </div>
+
+    <p>Peko’s Odyssey is a 2D action shooter I’m developing independently, featuring player combat, wave-based enemies, shooting mechanics, score tracking, particles, and custom art/animations created in Photoshop.</p>
+  </div>
+</div>
+
+
 
 <section id="writing">
-<h2>Writing Sample</h2>
-<p>
-Computational media fascinates me because meaning in games emerges from systems, not just text or narrative.
-A slight change in agent memory, timing, or gaze can alter how a player interprets intent. My research explores
-<b>how non-verbal signals, procedural environments, and AI behaviors influence a player's understanding of a system</b>,
-and how computational design can shape emotion, tension, and curiosity through interaction alone.
-</p>
-<p>
-The projects above represent early steps in this direction — moving toward expressive AI systems that create
-interpretation rather than dictate it.
+<h2><center>Writing Sample<center></h2>
+<p><div class="button-row">
+  <a class="btn-secondary" href="assets/writing_sample.pdf" target="_blank">Writing Sample PDF</a>
+</div>
 </p>
 </section>
 
-
-<!-- ===================== CONTACT ====================== -->
 
 <section id="contact">
 <h2>Contact</h2>
 <p>Email: <a href="mailto:kamilkhan6850@gmail.com">kamilkhan6850@gmail.com</a></p>
-<p>GitHub: <a href="https://github.com/KamilKhan23">github.com/KamilKhan23</a></p>
-<p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kamil-khan-0196a3271/">LinkedIn Profile</a></p>
+<p>GitHub: <a href="https://github.com/KamilKhan23">Github</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kamil-khan-0196a3271/">LinkedIn</a></p>
 </section>
 
-<footer>
-<p>© 2025 Muhammad Kamil Khan — Portfolio for UCSC Computational Media PhD</p>
-</footer>
+<footer>© 2025 Muhammad Kamil Khan</footer>
+
+<script>
+function openModal(id){document.getElementById(id).style.display="flex";}
+function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.style.display="none");}
+</script>
 
 </body>
 </html>
-
-
-

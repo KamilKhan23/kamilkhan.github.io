@@ -1,212 +1,265 @@
-/* ================= GLOBAL ================= */
+/* ================== GLOBAL ================== */
 body{
-  font-family:Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background:#0c0c0c;
   color:#e6e6e6;
   margin:0;
+  padding:0;
   line-height:1.6;
 }
 
 header{
   text-align:center;
-  padding:50px 20px;
+  padding:40px 10px;
   background:#111;
-  border-bottom:2px solid #00d1ff22;
+  border-bottom:2px solid #00d1ff33;
 }
 
 header h1{
-  font-size:42px;
-  margin-bottom:8px;
-  font-weight:bold;
+  font-size:36px;
+  margin:0;
+  font-weight:700;
 }
 
 header p{
-  color:#cfcfcf;
-  margin-bottom:10px;
-  font-size:17px;
+  opacity:.9;
+  margin-top:8px;
+}
+
+nav{
+  margin-top:15px;
 }
 
 nav a{
   color:#00d1ff;
-  margin:0 15px;
+  margin:0 12px;
   text-decoration:none;
   font-size:18px;
   font-weight:bold;
 }
 
-nav a:hover{color:white;}
+nav a:hover{
+  color:#fff;
+}
 
-
-/* ================= SECTIONS ================= */
 section{
-  width:85%;
-  max-width:1050px;
+  width:80%;
+  max-width:950px;
   margin:auto;
   padding:40px 0;
 }
 
 h2{
   color:#00d1ff;
-  font-size:28px;
   margin-bottom:15px;
-  text-align:center;
+  font-size:28px;
+  font-weight:700;
 }
 
-.intro{
-  text-align:center;
-  font-size:18px;
-  max-width:900px;
-  margin:auto;
-}
 
-.intro p{margin-bottom:15px;}
-
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 28px;
-  background:#00d1ff;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:6px;
-  transition:.3s;
-  box-shadow:0 0 10px #00d1ff66;
-}
-.btn:hover{background:white;box-shadow:0 0 15px #00d1ff;}
-
-
-/* ================= PORTFOLIO ================= */
-#portfolio h2{
-  text-align:center;
-  margin-bottom:25px;
-}
-
-/* Grid Layout */
+/* ================== GRID ================== */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
   margin-top:25px;
 }
 
-/* Project Card */
 .card{
-  background:#161616;
-  padding:18px;
-  border-radius:10px;
+  background:#111;
+  padding:20px;
+  border-radius:12px;
   text-align:center;
-  box-shadow:0 0 15px #000;
-  transition:.35s;
+  cursor:pointer;
+  transition:.3s;
+  border:1px solid #00d1ff22;
 }
 
 .card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 0 20px #00d1ff55;
+  transform:scale(1.03);
+  box-shadow:0 0 18px #00d1ff55;
 }
 
-/* Main project images (reduced smaller) */
 .card img{
   width:100%;
-  height:150px;     /* <<< Reduced size */
+  height:200px;
   object-fit:cover;
-  border-radius:6px;
-  margin-bottom:10px;
-}
-
-/* Multi-image gallery (Reckless Racer & FYP) */
-.gallery,
-.gallery-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  width:100%;
+  border-radius:8px;
   margin-bottom:12px;
 }
 
-.thumb{
-  width:48%;
-  aspect-ratio: 16/9; 
-  height:auto;
-  object-fit:cover;
-  border-radius:6px;
-  cursor:pointer;
-  transition:0.3s;
-  display:block;
-}
-.thumb:hover{
-  transform:scale(1.05);
-  box-shadow:0 0 10px #00d1ff;
-}
-
-
-/* Card Text */
 .card h3{
+  margin:10px 0;
   font-size:20px;
-  margin-bottom:8px;
-}
-
-.card p{
-  font-size:15px;
-  opacity:0.92;
-  margin-bottom:10px;
-}
-
-.card a{
-  display:inline-block;
-  margin-top:6px;
-  margin-right:6px;
-  color:#00d1ff;
-  text-decoration:none;
   font-weight:bold;
 }
-.card a:hover{color:white;}
 
+/* ================== POPUP MODALS ================== */
+.modal{
+  display:none;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.85);
+  z-index:1000;
+  padding:30px;
+  overflow:auto;
+}
 
-/* ================= WRITING SAMPLE ================= */
-#writing{
-  text-align:center;
-  font-size:17px;
+.modal-content{
+  background:#111;
+  width:75%;
   max-width:900px;
-  margin:auto;
-  line-height:1.7;
-}
-
-#writing p{
-  margin-bottom:12px;
-}
-
-
-/* ================= CONTACT ================= */
-#contact p{
+  padding:25px;
+  border-radius:12px;
   text-align:center;
-  margin-bottom:7px;
-  font-size:17px;
+  box-shadow:0 0 25px #00d1ff55;
+  animation:fadeIn .3s;
 }
 
-#contact a{color:#00d1ff;font-weight:bold;}
-#contact a:hover{color:white;}
+@keyframes fadeIn{
+  from{opacity:0; transform:scale(.95);}
+  to{opacity:1; transform:scale(1);}
+}
 
+.close{
+  float:right;
+  font-size:28px;
+  cursor:pointer;
+  color:#00d1ff;
+  margin-top:-15px;
+}
 
-/* ================= FOOTER ================= */
+.close:hover{
+  color:white;
+}
+
+.modal-content h2{
+  color:#00d1ff;
+}
+
+.modal-gallery{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:15px 0;
+}
+
+.modal-gallery img{
+  width:45%;
+  max-height:250px;
+  object-fit:cover;
+  border-radius:8px;
+  border:1px solid #00d1ff33;
+}
+
+/* ================== CONTACT + FOOTER ================== */
 footer{
   text-align:center;
-  padding:22px;
+  padding:18px;
   background:#111;
   color:#888;
   margin-top:40px;
-  font-size:15px;
   border-top:2px solid #00d1ff22;
 }
 
+/* Small screens (mobile) */
+@media(max-width:650px){
 
-/* ================= MOBILE ================= */
-@media(max-width:700px){
-  header h1{font-size:32px;}
-  nav a{font-size:16px;margin:0 10px;}
-  .thumb{height:80px;}  /* smaller on mobile */
-  .card img{height:130px;} /* reduce on mobile */
+  .modal-gallery img{
+    width:100%;
+  }
+
+  .modal-content{
+    width:92%;
+  }
+}
+/* Research Page Layout */
+.project-block{
+  margin-bottom:60px;
+}
+
+.img-row{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.img-row img{
+  width:46%;
+  border-radius:8px;
+  object-fit:cover;
+  border:1px solid #00d1ff33;
 }
 
 
+/* ================== BUTTON STYLES ================== */
+.button-row{
+  text-align:center;
+  margin-top:12px;
+}
+
+.btn-primary{
+  background:#00d1ff;
+  color:#000;
+  font-weight:bold;
+  padding:10px 20px;
+  border-radius:6px;
+  margin:5px;
+  display:inline-block;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn-primary:hover{
+  background:white;
+  box-shadow:0 0 15px #00d1ff;
+  color:#000;
+}
+
+.btn-secondary{
+  background:#111;
+  color:#00d1ff;
+  border:1px solid #00d1ff99;
+  font-weight:bold;
+  padding:10px 20px;
+  border-radius:6px;
+  margin:5px;
+  display:inline-block;
+  text-decoration:none;
+  transition:.3s;
+}
+.btn-secondary:hover{
+  background:#00d1ff;
+  color:#000;
+}
+
+/* image formatting for research sections */
+.img-row{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.img-row img{
+  width:46%;
+  border-radius:8px;
+  object-fit:cover;
+  border:1px solid #00d1ff33;
+}
+
+/* Section format */
+.project-block h2{
+  margin-top:40px;
+  font-size:26px;
+}
+.project-block hr{
+  margin-top:25px;
+  border:0;
+  border-bottom:1px solid #00d1ff44;
+  margin-bottom:35px;
+}

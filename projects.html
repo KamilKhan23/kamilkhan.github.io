@@ -1,55 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio Projects | Muhammad Kamil Khan</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Research Portfolio | Muhammad Kamil Khan</title>
+<link rel="stylesheet" href="style.css?v=11">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
 <header>
-<h1>Portfolio Projects</h1>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="projects.html">Portfolio</a>
-</nav>
+  <h1>Computational Media Portfolio</h1>
+  <p>Technical • Creative • Interpretive  submitted for UCSC PhD in Computational Media</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html" style="color:#00d1ff;font-weight:bold;">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section>
-<h2>Technical Projects</h2>
 
-<h3>Procedural AI-driven Chunked World System (Unity)</h3>
-<p>Runtime procedural terrain generation system using chunk-based world streaming. Integrated AI navigation across dynamic geometry.</p>
-<p><b>Focus:</b> player perception of scale & continuity</p>
-<p><a class="btn" href="https://github.com/KamilKhan23/Procedural-AI-Chunked-World.git">GitHub</a>
-<a class="btn" href="https://www.youtube.com/watch?v=yVf1r7poS2M">Video</a></p>
+<section>
+<h2>Portfolio Overview</h2>
+<p style="text-align:center;opacity:.75;max-width:800px;margin:auto;">
+This portfolio demonstrates breadth across the core research areas required by the
+<b>University of California, Santa Cruz  Computational Media PhD</b>:
+<br><br>
+<b style="color:#00d1ff;">Technical</b> (AI, PCG, AR systems) •
+<b style="color:#00d1ff;">Creative</b> (expressive interaction, experiential systems) •
+<b style="color:#00d1ff;">Interpretive</b> (meaning formed through player/system negotiation)
+</p>
+
+<br>
+<div style="text-align:center;">
+  <a class="btn-primary" href="#" onclick="window.print()">Download PDF Version</a>
+  <p style="font-size:13px;opacity:.6;">(Print to PDF export included  recommended for application upload)</p>
+</div>
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- PROJECT 1 -->
+<section class="project-block">
+
+<h2>Procedural Chunked AI World  Technical Research</h2>
+<p style="opacity:.7;margin-top:-10px;">Category: <b>Technical • System Design • Emergent AI</b></p>
+
+<h3>Abstract</h3>
+<p>
+A procedural content generation (PCG) research prototype that produces infinite terrain
+while dynamically generating navigation graphs for autonomous agents. The goal is to study
+<b>how AI behavior is perceived when worlds evolve instead of remaining static</b>.
+</p>
+
+<h3>Methodology & System Architecture</h3>
+<ul>
+<li>Chunk streaming using deterministic seeded generation</li>
+<li>Runtime NavMesh baking with seamless tile updates</li>
+<li>Multi-state AI (Patrol → Chase → Search → Reacquire)</li>
+<li>Difficulty scaling based on space density</li>
+</ul>
+
+<h3>Implementation</h3>
+<div class="img-row">
+  <!-- ✨ Add your screenshots later here -->
+  <img src="assets/procedural.png">
+ <img src="assets/ai2.png">
+</div>
+
+<div class="button-row">
+  <a class="btn-primary" href="https://github.com/KamilKhan23/Procedural-AI-Chunked-World" target="_blank">GitHub Repository</a>
+  <a class="btn-primary" href="https://www.youtube.com/watch?v=yVf1r7poS2M" target="_blank">Demo Video</a>
+</div>
+
+<p><b>Tech Stack:</b> Unity LTS • C# • Runtime NavMesh • PCG Systems</p>
+
+<h3>Interpretive Relevance</h3>
+<p>
+Players construct meaning through <b>pattern recognition, spatial reading, and AI reactions</b>.
+The environment is a collaborator  not a backdrop.
+</p>
+
+<h3>Future Work</h3>
+<ul>
+<li>Reward shaping with Reinforcement Learning</li>
+<li>PCG based player modeling for adaptive difficulty</li>
+<li>Emergent group behaviors (predator prey ecological sims)</li>
+</ul>
+
 <hr>
+</section>
 
-<h3>AR Object Recognition using Machine Learning (FYP)</h3>
-<p>Unity AR system performing ONNX ML inference offline for real-time recognition. Explores ML perception & interaction feedback.</p>
-<p><b>Relevance:</b> system interpretation & perception in mixed reality</p>
+
+
+<!-- ========================================================= -->
+<!-- PROJECT 2 -->
+<section class="project-block">
+
+<h2>Recognition Without Dialogue  Creative & Interpretive</h2>
+<p style="opacity:.7;margin-top:-10px;">Category: <b>Creative • Interpretive Interaction • Expressive Systems</b></p>
+
+<h3>Abstract</h3>
+<p>
+An experimental interactive system where meaning emerges <b>without dialogue, UI, or objectives</b>.
+Recognition, familiarity, and trust are expressed through time, proximity, and ambience rather than words.
+</p>
+
+<h3>Core Concepts</h3>
+<ul>
+<li>Non-verbal system acknowledgment</li>
+<li>Delayed recognition that decreases over repeat encounters</li>
+<li>Persistent memory between sessions</li>
+<li>Lighting/sound as emotional indicators instead of UI</li>
+<li>Final stage: NPC stops tracking player  symbolizing trust</li>
+</ul>
+
+<h3>Screenshots</h3>
+<div class="img-row">
+   <img src="assets/fantasy.png">
+ <img src="assets/nar2.png">
+</div>
+
+
+<div class="button-row">
+<a class="btn-primary" href="https://github.com/KamilKhan23/Recognition-Without-Dialogue" target="_blank">GitHub Repository</a> 
+ <a class="btn-primary" href="https://youtu.be/U3J7lswDd6k" target="_blank">Project Video</a>
+<p><div class="button-row">
+  <a class="btn-secondary" href="assets/writing_sample.pdf" target="_blank">Writing Sample PDF</a>
+</div>
+</p>
+   
+</div>
+
+
+<h3>Interpretive Significance</h3>
+<p>
+Meaning arises from <b>player behavior rather than developer instruction</b>.  
+UCSC aligned research theme: interaction as communication.
+</p>
+
 <hr>
 </section>
 
-<section>
-<h2>Creative Projects</h2>
-<h3>Non-verbal Recognition System (Unity)</h3>
-<p>Agent communicates awareness through gaze, proximity, memory—no dialogue. Explores emergent interpretation.</p>
-<a class="btn" href="https://github.com/KamilKhan23/Recognition-Without-Dialogue.git">GitHub</a>
-<a class="btn" href="https://www.youtube.com/watch?v=U3J7lswDd6k">Video</a>
+
+
+<!-- ========================================================= -->
+<!-- PROJECT 3 -->
+<section class="project-block">
+
+<h2>AR Object Recognition  Technical + HCI (In Progress) FYP</h2>
+<p style="opacity:.7;margin-top:-10px;">Category: <b>Technical • Interaction • Perception Systems</b></p>
+
+<h3>Note</h3>
+<p>
+This is our Final Year Project at my current Bachelor's Degree , Hence this is a work in progress and will be completed till March 2026
+</p>
+
+<h3>Abstract</h3>
+<p>
+A real time AR recognition system using ONNX ML inference integrated inside Unity.
+Designed to operate without cloud dependency  supporting offline perception use cases.
+</p>
+
+<h3>Method & Implementation</h3>
+<ul>
+<li>Model training in PyTorch → converted to ONNX</li>
+<li>Unity inference pipeline using Sentis</li>
+<li>Live UI overlays for bounding detection</li>
+<li>Latency optimization for mobile devices</li>
+</ul>
+
+<h3>Screenshots</h3>
+<div class="img-row">
+  <img src="assets/fyp1.jpeg">
+  <img src="assets/fyp2.jpeg">
+</div>
+
+<p><b>Tech Stack:</b> Unity • AR Foundation • ML ONNX • YOLO • Mobile Vision</p>
+
+<h3>Future Research Direction</h3>
+<p>
+Expansion into <b>memory aware recognition, AR guidance, educational interaction</b>.
+Potential integration with PCG worlds & non verbal systems.
+</p>
+
 <hr>
 </section>
 
-<section>
-<h2>Interpretive Work (Writing Sample)</h2>
-<p><i>Upload or paste a PDF later — placeholder included now.</i></p>
-<a class="btn">Writing Sample (Coming Soon)</a>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:kamilkhan6850@gmail.com">kamilkhan6850@gmail.com</a></p>
+<p>GitHub: <a href="https://github.com/KamilKhan23">github.com/KamilKhan23</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kamil-khan-0196a3271/">LinkedIn</a></p>
 </section>
 
-<section>
-<h2>Games Portfolio</h2>
-<p>4 mini-games + 3D superhero game contributed at Metal Heart Studios. (Screenshots/videos can be added later)</p>
-</section>
+<footer>© 2025 Muhammad Kamil Khan  Computational Media Portfolio</footer>
 
 </body>
 </html>
