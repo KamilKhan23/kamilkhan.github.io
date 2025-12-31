@@ -115,27 +115,31 @@ h2{
 }
 
 /* Multi-image gallery (Reckless Racer & FYP) */
-.gallery{
+.gallery,
+.gallery-row{
   display:flex;
+  justify-content:space-between;
+  align-items:center;
   gap:10px;
-  justify-content:center;
-  margin-bottom:10px;
+  width:100%;
+  margin-bottom:12px;
 }
 
-/* Thumbnail smaller */
 .thumb{
   width:48%;
-  height:90px;      /* <<< Reduced size */
+  aspect-ratio: 16/9; 
+  height:auto;
   object-fit:cover;
   border-radius:6px;
   cursor:pointer;
-  transition:.3s;
+  transition:0.3s;
+  display:block;
 }
-
 .thumb:hover{
   transform:scale(1.05);
-  box-shadow:0 0 12px #00d1ffaa;
+  box-shadow:0 0 10px #00d1ff;
 }
+
 
 /* Card Text */
 .card h3{
@@ -204,4 +208,5 @@ footer{
   .thumb{height:80px;}  /* smaller on mobile */
   .card img{height:130px;} /* reduce on mobile */
 }
+
 
