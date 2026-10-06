@@ -2,93 +2,119 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Muhammad Kamil Khan | Computational Media Portfolio</title>
-<link rel="stylesheet" href="style.css?v=5">
+<title>Muhammad Kamil Khan | XR and Real-Time 3D Research</title>
+<meta name="description" content="Muhammad Kamil Khan: research in extended reality, 3D Gaussian Splatting, and physics-based interaction on standalone hardware.">
+<link rel="stylesheet" href="style.css?v=6">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
 
 <body>
 
 <header>
   <h1>Muhammad Kamil Khan</h1>
-  <p>Computational Media • AI Systems • Procedural Interaction • Game Research</p>
+  <p>Extended Reality • 3D Gaussian Splatting • Real-Time Interactive Systems</p>
   <nav>
-    <a href="projects.html">Portfolio</a>
-    <a href="#writing">Writing</a>
+    <a href="#research">Research</a>
+    <a href="#portfolio">Projects</a>
+    <a href="assets/Muhammad_Kamil_Khan_CV.pdf" target="_blank">CV</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="intro">
   <h2>About Me</h2>
-  <p>I am a computer systems engineering student and game developer with a research interest in computational media, procedural generation, and expressive interactive systems. I work at the intersection of technical systems and player experience, exploring how artificial agents, environments, and rules can communicate meaning through behavior rather than explicit narrative. My background spans game development, augmented and virtual reality, and AI driven systems, with projects ranging from procedural world generation to non verbal interaction experiments. Having grown up across the United States, Canada, and Pakistan, I bring a perspective shaped by movement, adaptation, and access, and I am particularly interested in how interactive systems foster curiosity, interpretation, and connection. My long term goal is to pursue research in computational media, designing systems that use computation to expand how people play, think, and experience interactive worlds.</p>
-  <p>BS Computer Systems Engineering @ UET Peshawar  Expected 2026</p>
+  <p>I build and study interactive 3D systems, with a focus on extended reality. This summer at the National University of Singapore I worked with Dr. Anand Bhojan on 3D Gaussian Splatting for standalone VR, and built a system that lets people physically interact with Gaussian Splatting objects directly on a Meta Quest 3. That project is what convinced me I want to do research.</p>
+  <p>Before that I spent several years building real-time interactive software: mobile games in Unity at two studios, an on-device AR recognition app for my final year project, and a computer vision project on cross-view road-image correspondence. I want to keep working on immersive environments that are not only visually convincing but physically meaningful to interact with.</p>
+  <p>Having grown up across the United States, Canada, and Pakistan, I am interested in how interactive systems can be made accessible and engaging for people in very different places.</p>
+  <p><b>BS Computer Systems Engineering</b>, UET Peshawar, 2026 (GPA 3.61 / 4.00)</p>
 </section>
-
-<h2><center>Research Portfolio<center></h2>
-<div class="button-row">
-  <a class="btn-primary" href="projects.html">View Portfolio</a>
-</div>
 
 <section>
   <h2>Research Interests</h2>
-  <p>
-    My research interests center on <b>Computational Media, Game AI, and Expressive Interaction Systems</b>, with emphasis on:
-  </p>
   <ul>
-    <li>Procedural Content Generation (PCG) & adaptive world systems</li>
-    <li>Agent behavior, autonomy, and player system relationships</li>
-    <li>Non verbal, interpretive, and affect driven interaction</li>
-    <li>AR perception & real time inference for embodied play</li>
-    <li>Meaning formation through system response rather than explicit narrative</li>
+    <li>Extended reality (XR) and immersive interaction</li>
+    <li>3D Gaussian Splatting and neural scene representations</li>
+    <li>Real-time rendering on standalone and mobile hardware</li>
+    <li>Physics-based interaction in reconstructed 3D environments</li>
+    <li>Human factors of XR interaction: presence, workload, and interaction fidelity</li>
   </ul>
-  <p>
-    I aim to explore how digital systems can communicate <b>emotion, familiarity, and trust</b> through behavior, memory, and environment and how interactive media can evoke understanding without words.
-  </p>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research">
+  <h2>Research</h2>
+
+  <div class="research-block">
+    <h3>Physics-Aware Gaussian Splatting Interaction in Standalone VR</h3>
+    <p class="meta">NUS School of Computing, Summer Research Internship 2026 • Supervisor: Dr. Anand Bhojan • Jul – Sep 2026</p>
+    <ul>
+      <li>Built a standalone VR system for physics-interactive manipulation of 3D Gaussian Splatting objects that runs natively on Meta Quest 3, without a tethered PC.</li>
+      <li>Designed and implemented a point-cloud-based convex-hull collision generation algorithm, 50–150x faster than standard voxelization-based approaches.</li>
+      <li>Designed a counterbalanced human-subjects study (IRB submitted) on physical interaction fidelity, using NASA-TLX and presence questionnaires.</li>
+      <li>Selected as 1 of 23 participants worldwide for the NUS Summer Research Internship.</li>
+    </ul>
+    <p class="note">Demo video available after paper submission.</p>
+  </div>
+
+  <div class="research-block">
+    <h3>Cross-View Correspondence for Road-Image Homography</h3>
+    <p class="meta">Remote, with Dr. Fawad Ahmad, Rochester Institute of Technology • Jan – Feb 2026</p>
+    <p>Investigated automatically finding four corresponding anchor points between side-view and top-down road images to estimate a homography. Experimented with feature matching (ORB, SIFT/FLANN, LoFTR with RANSAC), geometric cues (Hough and LSD line intersections), and SegFormer road segmentation.</p>
+  </div>
+
+  <h3>Publications</h3>
+  <p class="pub"><b>M. K. Khan</b> and A. Bhojan. <i>Physics-Aware Gaussian Splatting Interaction in Standalone Virtual Reality.</i> Manuscript in preparation for IEEE AIVR.</p>
+
+  <div class="button-row">
+    <a class="btn-primary" href="assets/Muhammad_Kamil_Khan_CV.pdf" target="_blank">Download CV</a>
+    <a class="btn-secondary" href="projects.html">Detailed Project Write-ups</a>
+  </div>
 </section>
 
 
-<!-- ================= PORTFOLIO ================= -->
+<!-- ================= PROJECTS ================= -->
 <section id="portfolio">
-<h2>Featured Projects</h2>
+<h2>Projects</h2>
 
 <div class="grid">
 
-
-    <div class="card" onclick="openModal('fantasy')">
-    <img src="assets/fantasy.png">
-    <h3>Recognition Without Dialogue</h3>
-    <p>Expressive interaction prototype.</p>
+  <div class="card" onclick="openModal('fyp')">
+    <img src="assets/fyp1.jpeg" alt="ARDetect recognizing electronic components in AR">
+    <h3>ARDetect: Offline AR Learning App</h3>
+    <p>On-device YOLOv8n detection + AR overlays (Final Year Project).</p>
   </div>
 
   <div class="card" onclick="openModal('procedural')">
-    <img src="assets/procedural.png">
+    <img src="assets/procedural.png" alt="Procedurally generated terrain">
     <h3>Procedural AI World Generator</h3>
-    <p>Runtime terrain + navmesh procedural agents.</p>
+    <p>Runtime terrain + NavMesh procedural agents.</p>
   </div>
 
-<div class="card" onclick="openModal('fyp')">
-    <img src="assets/fyp1.jpeg">
-    <h3>AR Object Recognition  FYP</h3>
-    <p>ONNX realtime inference + AR overlay.</p>
+  <div class="card" onclick="openModal('fantasy')">
+    <img src="assets/fantasy.png" alt="Recognition Without Dialogue scene">
+    <h3>Recognition Without Dialogue</h3>
+    <p>Non-verbal agent interaction prototype.</p>
   </div>
 
- <div class="card" onclick="openModal('superhero')">
-    <img src="assets/superhero.png">
+</div>
+
+<h3 class="subhead">Game Development</h3>
+<div class="grid">
+
+  <div class="card" onclick="openModal('superhero')">
+    <img src="assets/superhero.png" alt="Superhero 3D action game">
     <h3>Superhero 3D Action Game (Studio)</h3>
     <p>Combat, traversal, UI, animation workflow.</p>
   </div>
 
   <div class="card" onclick="openModal('racer')">
-    <img src="assets/racer.jpg">
+    <img src="assets/racer.jpg" alt="Reckless Racer 2D">
     <h3>Reckless Racer (2D)</h3>
     <p>Waypoint AI + track design + UI flow.</p>
   </div>
 
   <div class="card" onclick="openModal('survival')">
-    <img src="assets/survival.png">
+    <img src="assets/survival.png" alt="Peko's Odyssey">
     <h3>Peko’s Odyssey</h3>
     <p>Wave enemy spawner + combat logic.</p>
   </div>
@@ -106,18 +132,16 @@
     <h2>Procedural AI World Generator</h2>
 
     <div class="modal-gallery">
-      <img src="assets/procedural.png">
+      <img src="assets/procedural.png" alt="Procedurally generated terrain">
     </div>
 
-    <p>Chunk based infinite terrain with auto navmesh + AI roaming behavior.</p>
- <p>NOTE: For more detail on project please visit portfolio section</p>
+    <p>Chunk-based infinite terrain with runtime NavMesh and AI roaming behavior, seeded worlds, and difficulty modes.</p>
     <p><b>Tech:</b> Unity • NavMesh • Procedural Generation</p>
-   <div class="button-row">
-  <a class="btn-primary" href="https://github.com/KamilKhan23/Procedural-AI-Chunked-World.git" target="_blank">GitHub</a>
-  <a class="btn-primary" href="https://www.youtube.com/watch?v=yVf1r7poS2M" target="_blank">Demo Video</a>
-  <a class="btn-secondary" href="projects.html">Portfolio Page</a>
-</div>
-
+    <div class="button-row">
+      <a class="btn-primary" href="https://github.com/KamilKhan23/Procedural-AI-Chunked-World" target="_blank">GitHub</a>
+      <a class="btn-primary" href="https://www.youtube.com/watch?v=yVf1r7poS2M" target="_blank">Demo Video</a>
+      <a class="btn-secondary" href="projects.html">Full Write-up</a>
+    </div>
   </div>
 </div>
 
@@ -129,19 +153,17 @@
     <h2>Superhero 3D Action Game (Studio)</h2>
 
     <div class="modal-gallery">
-      <img src="assets/superhero.png">
+      <img src="assets/superhero.png" alt="Superhero 3D action game">
     </div>
 
     <p>Gameplay, traversal mechanics, UI, VFX, cinematic scenes.</p>
 
- <p>During development of Superhero 3D Action, I contributed to gameplay implementation, traversal mechanics, and overall feel of the character. I worked on core combat interactions, player movement tuning, and animation blending to make actions responsive and readable. I also helped design and integrate UI flow, HUD transitions, and user feedback elements. Beyond mechanical work, I contributed to several cinematic moments using Cinemachine, implementing camera angles and VFX triggers to enhance impact. My role combined technical scripting with experiential polish in a production level mobile game.</p>
+    <p>During development of Superhero 3D Action at Metal Heart Game Studios, I contributed to gameplay implementation, traversal mechanics, and the overall feel of the character. I worked on core combat interactions, player movement tuning, and animation blending to make actions responsive and readable. I also helped design and integrate UI flow, HUD transitions, and user feedback elements, and built several cinematic moments with Cinemachine, camera angles, and VFX triggers.</p>
 
-  <div class="button-row">
-  <a class="btn-primary" href="https://apps.apple.com/us/app/super-hero-justice-war-league/id1644682510" target="_blank">App Store</a>
-  <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.cp.superherojusticewarlegends" target="_blank">Play Store</a>
-</div>
-
-
+    <div class="button-row">
+      <a class="btn-primary" href="https://apps.apple.com/us/app/super-hero-justice-war-league/id1644682510" target="_blank">App Store</a>
+      <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.cp.superherojusticewarlegends" target="_blank">Play Store</a>
+    </div>
   </div>
 </div>
 
@@ -153,15 +175,14 @@
     <h2>Reckless Racer 2D</h2>
 
     <div class="modal-gallery">
-      <img src="assets/racer.jpg">
-      <img src="assets/racer2.jpg">
+      <img src="assets/racer.jpg" alt="Reckless Racer gameplay">
+      <img src="assets/racer2.jpg" alt="Reckless Racer menu">
     </div>
 
-    <p>Waypoint racing AI, UI menus, level construction.</p>
-
-<p>Reckless Racing 2D is my first independently developed Unity game, where I built core systems including racing AI, waypoint navigation, lap/checkpoint tracking, UI, 2D physics, score handling, and Google Ads integration. It served as my entry point into game development and helped me understand gameplay loops and release pipelines.</p>
-<a class="btn-secondary" href="https://www.linkedin.com/posts/muhammad-kamil-khan-0196a3271_unity-unity2d-gamedev-activity-7165299877722112000-wpJv" target="_blank">LinkedIn Post</a>
-
+    <p>Reckless Racer 2D is the first game I built and published, during my internship at Spark Game Studios: racing AI with waypoint navigation, lap and checkpoint tracking, UI, 2D physics, scoring, and Google Ads integration. It taught me gameplay loops and the full release pipeline.</p>
+    <div class="button-row">
+      <a class="btn-secondary" href="https://www.linkedin.com/posts/muhammad-kamil-khan-0196a3271_unity-unity2d-gamedev-activity-7165299877722112000-wpJv" target="_blank">LinkedIn Post</a>
+    </div>
   </div>
 </div>
 
@@ -170,19 +191,19 @@
 <div id="fyp" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <h2>AR Object Recognition  FYP</h2>
+    <h2>ARDetect: Offline AR Learning App for Electronics</h2>
 
     <div class="modal-gallery">
-      <img src="assets/fyp1.jpeg">
-      <img src="assets/fyp2.jpeg">
+      <img src="assets/fyp1.jpeg" alt="ARDetect detection view">
+      <img src="assets/fyp2.jpeg" alt="ARDetect AR overlay">
     </div>
 
-    <p>AR Final Year Project implementing an ONNX based offline recognition model integrated with Unity ARFoundation. The system performs real time detection and confidence visualization directly on mobile hardware, demonstrating approaches to efficient edge inference, spatial feedback, and mixed reality perception.</p>
- <p>NOTE: For more detail on project please visit portfolio section</p>
-<div class="button-row">
-
-  <a class="btn-secondary" href="projects.html">Portfolio Page</a>
-</div>
+    <p>Final Year Project (4-person team). An Android app that recognizes electronic components (breadboard, LED, Arduino) through the phone camera and places matching 3D models in AR, with an offline chatbot that answers questions about each part.</p>
+    <p>I owned the model side: merged datasets and trained a 3-class YOLOv8n detector (mAP50 of 0.993 / 0.848 / 0.995 for breadboard / LED / Arduino), then built the deployment pipeline that runs the model on-device as ONNX through Unity Sentis, fully offline.</p>
+    <p><b>Tech:</b> Unity AR Foundation • YOLOv8n • ONNX • Unity Sentis • Python • Google Colab</p>
+    <div class="button-row">
+      <a class="btn-secondary" href="projects.html">Full Write-up</a>
+    </div>
   </div>
 </div>
 
@@ -194,18 +215,16 @@
     <h2>Recognition Without Dialogue</h2>
 
     <div class="modal-gallery">
-      <img src="assets/fantasy.png">
+      <img src="assets/fantasy.png" alt="Recognition Without Dialogue scene">
     </div>
 
     <p>A minimal Unity experience where familiarity and trust emerge non-verbally through proximity, time, and subtle environmental response.</p>
- <p>NOTE: For more detail on project please visit portfolio section</p>
 
-<div class="button-row">
-  <a class="btn-primary" href="https://github.com/KamilKhan23/Recognition-Without-Dialogue" target="_blank">GitHub</a>
-  <a class="btn-primary" href="https://youtu.be/U3J7lswDd6k" target="_blank">Demo Video</a>
-  <a class="btn-secondary" href="projects.html">Portfolio Page</a>
-</div>
-
+    <div class="button-row">
+      <a class="btn-primary" href="https://github.com/KamilKhan23/Recognition-Without-Dialogue" target="_blank">GitHub</a>
+      <a class="btn-primary" href="https://youtu.be/U3J7lswDd6k" target="_blank">Demo Video</a>
+      <a class="btn-secondary" href="assets/writing_sample.pdf" target="_blank">Writing Sample</a>
+    </div>
   </div>
 </div>
 
@@ -217,37 +236,29 @@
     <h2>Peko’s Odyssey</h2>
 
     <div class="modal-gallery">
-      <img src="assets/survival.png">
-     <img src="assets/peko2.png">
+      <img src="assets/survival.png" alt="Peko's Odyssey gameplay">
+      <img src="assets/peko2.png" alt="Peko's Odyssey character">
     </div>
 
-    <p>Peko’s Odyssey is a 2D action shooter I’m developing independently, featuring player combat, wave-based enemies, shooting mechanics, score tracking, particles, and custom art/animations created in Photoshop.</p>
+    <p>Peko’s Odyssey is a 2D action shooter I am developing independently, featuring player combat, wave-based enemies, shooting mechanics, score tracking, particles, and custom art and animations created in Photoshop.</p>
   </div>
 </div>
-
-
-
-<section id="writing">
-<h2><center>Writing Sample<center></h2>
-<p><div class="button-row">
-  <a class="btn-secondary" href="assets/writing_sample.pdf" target="_blank">Writing Sample PDF</a>
-</div>
-</p>
-</section>
 
 
 <section id="contact">
 <h2>Contact</h2>
 <p>Email: <a href="mailto:kamilkhan6850@gmail.com">kamilkhan6850@gmail.com</a></p>
-<p>GitHub: <a href="https://github.com/KamilKhan23">Github</a></p>
-<p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kamil-khan-0196a3271/">LinkedIn</a></p>
+<p>GitHub: <a href="https://github.com/KamilKhan23">github.com/KamilKhan23</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kamil-khan-0196a3271/">linkedin.com/in/muhammad-kamil-khan-0196a3271</a></p>
 </section>
 
-<footer>© 2025 Muhammad Kamil Khan</footer>
+<footer>© 2026 Muhammad Kamil Khan</footer>
 
 <script>
 function openModal(id){document.getElementById(id).style.display="flex";}
 function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.style.display="none");}
+document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModal();}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 </script>
 
 </body>

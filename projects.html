@@ -2,40 +2,72 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Research Portfolio | Muhammad Kamil Khan</title>
-<link rel="stylesheet" href="style.css?v=11">
+<title>Project Write-ups | Muhammad Kamil Khan</title>
+<link rel="stylesheet" href="style.css?v=12">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
 <header>
-  <h1>Computational Media Portfolio</h1>
-  <p>Technical • Creative • Interpretive  submitted for UCSC PhD in Computational Media</p>
+  <h1>Project Write-ups</h1>
+  <p>Muhammad Kamil Khan • XR, Real-Time 3D, and Interactive Systems</p>
   <nav>
     <a href="index.html">Home</a>
-    <a href="projects.html" style="color:#00d1ff;font-weight:bold;">Portfolio</a>
+    <a href="index.html#research">Research</a>
+    <a href="projects.html" style="color:#00d1ff;font-weight:bold;">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 
 <section>
-<h2>Portfolio Overview</h2>
+<h2>Overview</h2>
 <p style="text-align:center;opacity:.75;max-width:800px;margin:auto;">
-This portfolio demonstrates breadth across the core research areas required by the
-<b>University of California, Santa Cruz  Computational Media PhD</b>:
-<br><br>
-<b style="color:#00d1ff;">Technical</b> (AI, PCG, AR systems) •
-<b style="color:#00d1ff;">Creative</b> (expressive interaction, experiential systems) •
-<b style="color:#00d1ff;">Interpretive</b> (meaning formed through player/system negotiation)
+Detailed write-ups of selected projects, from on-device AR perception to procedural worlds and non-verbal interaction.
+My current research on physics-aware Gaussian Splatting in standalone VR is summarized on the
+<a href="index.html#research">home page</a>.
 </p>
 
 <br>
 <div style="text-align:center;">
   <a class="btn-primary" href="#" onclick="window.print()">Download PDF Version</a>
-  <p style="font-size:13px;opacity:.6;">(Print to PDF export included  recommended for application upload)</p>
+  <a class="btn-secondary" href="assets/Muhammad_Kamil_Khan_CV.pdf" target="_blank">CV</a>
 </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- ARDETECT -->
+<section class="project-block">
+
+<h2>ARDetect: Offline AR Learning App for Electronics</h2>
+<p style="opacity:.7;margin-top:-10px;">Final Year Project, UET Peshawar (4-person team) • <b>On-device ML • AR • Perception</b></p>
+
+<h3>Abstract</h3>
+<p>
+An Android app that recognizes electronic components (breadboard, LED, Arduino) through the phone camera and places
+matching 3D models in AR, with an offline chatbot that answers questions about each part. Everything runs on the
+device, with no cloud dependency.
+</p>
+
+<h3>My Contribution</h3>
+<ul>
+<li>Merged datasets and trained a 3-class YOLOv8n detector in Google Colab (61 epochs)</li>
+<li>Reached mAP50 of 0.993 / 0.848 / 0.995 for breadboard / LED / Arduino</li>
+<li>Exported the model to ONNX and ran real-time inference on-device through Unity Sentis</li>
+<li>Integrated detections with AR Foundation overlays and confidence visualization</li>
+</ul>
+
+<h3>Screenshots</h3>
+<div class="img-row">
+  <img src="assets/fyp1.jpeg" alt="ARDetect detection view">
+  <img src="assets/fyp2.jpeg" alt="ARDetect AR overlay">
+</div>
+
+<p><b>Tech Stack:</b> Unity AR Foundation • YOLOv8n • ONNX • Unity Sentis • Python • Google Colab</p>
+
+<hr>
 </section>
 
 
@@ -44,7 +76,7 @@ This portfolio demonstrates breadth across the core research areas required by t
 <!-- PROJECT 1 -->
 <section class="project-block">
 
-<h2>Procedural Chunked AI World  Technical Research</h2>
+<h2>Procedural Chunked AI World</h2>
 <p style="opacity:.7;margin-top:-10px;">Category: <b>Technical • System Design • Emergent AI</b></p>
 
 <h3>Abstract</h3>
@@ -64,7 +96,6 @@ while dynamically generating navigation graphs for autonomous agents. The goal i
 
 <h3>Implementation</h3>
 <div class="img-row">
-  <!-- ✨ Add your screenshots later here -->
   <img src="assets/procedural.png">
  <img src="assets/ai2.png">
 </div>
@@ -98,7 +129,7 @@ The environment is a collaborator  not a backdrop.
 <!-- PROJECT 2 -->
 <section class="project-block">
 
-<h2>Recognition Without Dialogue  Creative & Interpretive</h2>
+<h2>Recognition Without Dialogue</h2>
 <p style="opacity:.7;margin-top:-10px;">Category: <b>Creative • Interpretive Interaction • Expressive Systems</b></p>
 
 <h3>Abstract</h3>
@@ -137,56 +168,12 @@ Recognition, familiarity, and trust are expressed through time, proximity, and a
 <h3>Interpretive Significance</h3>
 <p>
 Meaning arises from <b>player behavior rather than developer instruction</b>.  
-UCSC aligned research theme: interaction as communication.
+Research theme: interaction as communication.
 </p>
 
 <hr>
 </section>
 
-
-
-<!-- ========================================================= -->
-<!-- PROJECT 3 -->
-<section class="project-block">
-
-<h2>AR Object Recognition  Technical + HCI (In Progress) FYP</h2>
-<p style="opacity:.7;margin-top:-10px;">Category: <b>Technical • Interaction • Perception Systems</b></p>
-
-<h3>Note</h3>
-<p>
-This is our Final Year Project at my current Bachelor's Degree , Hence this is a work in progress and will be completed till March 2026
-</p>
-
-<h3>Abstract</h3>
-<p>
-A real time AR recognition system using ONNX ML inference integrated inside Unity.
-Designed to operate without cloud dependency  supporting offline perception use cases.
-</p>
-
-<h3>Method & Implementation</h3>
-<ul>
-<li>Model training in PyTorch → converted to ONNX</li>
-<li>Unity inference pipeline using Sentis</li>
-<li>Live UI overlays for bounding detection</li>
-<li>Latency optimization for mobile devices</li>
-</ul>
-
-<h3>Screenshots</h3>
-<div class="img-row">
-  <img src="assets/fyp1.jpeg">
-  <img src="assets/fyp2.jpeg">
-</div>
-
-<p><b>Tech Stack:</b> Unity • AR Foundation • ML ONNX • YOLO • Mobile Vision</p>
-
-<h3>Future Research Direction</h3>
-<p>
-Expansion into <b>memory aware recognition, AR guidance, educational interaction</b>.
-Potential integration with PCG worlds & non verbal systems.
-</p>
-
-<hr>
-</section>
 
 
 <section id="contact">
@@ -196,7 +183,7 @@ Potential integration with PCG worlds & non verbal systems.
 <p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kamil-khan-0196a3271/">LinkedIn</a></p>
 </section>
 
-<footer>© 2025 Muhammad Kamil Khan  Computational Media Portfolio</footer>
+<footer>© 2026 Muhammad Kamil Khan</footer>
 
 </body>
 </html>
